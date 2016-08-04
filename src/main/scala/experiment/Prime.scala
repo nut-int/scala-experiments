@@ -15,7 +15,6 @@ class Prime extends Experiment {
       _primeFactor(start, primes)
     }
 
-
     def primeFactorMultiplicity: Map[Int, Int] = start.primeFactor.groupBy(x => x).mapValues(x => x.size)
 
     def toTient: Int = start.primeFactorMultiplicity.foldLeft(1) { (r,f) =>
