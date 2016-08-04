@@ -6,7 +6,6 @@ class Prime extends Experiment {
   implicit class PrimeNumber(start: Int) {
     def isPrime: Boolean = (start > 1) && (primes takeWhile { _ <= Math.sqrt(start) } forall { start % _ != 0 })
 
-
     def primeFactor: List[Int] = {
       def _primeFactor(n: Int, ps: Stream[Int], result: List[Int] = Nil): List[Int] = {
         if (n.isPrime) (n :: result).reverse
