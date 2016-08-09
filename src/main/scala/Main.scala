@@ -21,8 +21,9 @@ object Main {
 //    experiments += new Collections()
 //    experiments += new OptionExperiment()
 //    experiments += new ExceptionPlayground()
-//    experiments += new ConcurrencyNaja()
+    experiments += new ConcurrencyNaja()
     experiments += new Prime()
+
 
     class Func2( name: String ) extends Var( name ) {}
     println( Console.BLUE + "====Welcome to experiment lab====" + Console.RESET )
