@@ -5,6 +5,8 @@ object Backtracking {
     def countArea (find: Int = -1): Int = arr.flatMap(x => x.filter( y => y == find)).length
   }
 
+
+  
   def backtracking(arr: List[List[Int]], row: Int = 0, col: Int = 0, result: List[(Int, Int)] = List(), currentCount: Int = 0): List[(Int, Int)] = {
     if (row < arr.length) {
       if (col < arr.head.length) {
