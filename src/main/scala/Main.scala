@@ -14,7 +14,7 @@ object Main {
 //    experiments += new XmlProcessing()
 //    experiments += new Coloring()
 //    experiments += new Loops()
-    // experiments += new Sequences()
+//    experiments += new Sequences()
 //    experiments += new PatternMaching()
 //    experiments += new ForComprehension()
 //    experiments += new PatternMachingAnoFunc()
@@ -22,7 +22,8 @@ object Main {
 //    experiments += new OptionExperiment()
 //    experiments += new ExceptionPlayground()
 //    experiments += new ConcurrencyNaja()
-    experiments += new Prime()
+//    experiments += new Prime()
+    experiments += new WaterPouring(Vector(4,9))
 
     class Func2( name: String ) extends Var( name ) {}
     println( Console.BLUE + "====Welcome to experiment lab====" + Console.RESET )
